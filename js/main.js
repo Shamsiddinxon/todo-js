@@ -64,8 +64,8 @@ const renderTodos = function (arr, element) {
 };
 
 const localTodos = JSON.parse(window.localStorage.getItem("localTodos"));
+let todos = localTodos || [];
 
-let todos = localTodos;
 
 renderTodos(todos, elList);
 
