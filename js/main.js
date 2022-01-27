@@ -75,12 +75,20 @@ elList.addEventListener("click", function (evt) {
     let btnTodoId = evt.target.dataset.todoId * 1;
     let foundIndex = todos.findIndex((todo) => todo.id === btnTodoId);
 
+
     todos.splice(foundIndex, 1);
 
     elList.innerHTML = null;
 
     renderTodos(todos, elList);
     window.localStorage.setItem("localTodos", JSON.stringify(todos));
+    if (todos.length === 0) {
+      elAllBtnDesc.textContent = "0"
+      elAllComDesc.textContent = "0"
+      elAllUmcDesc.textContent = "0"
+
+      // console.log("boldii");
+    }
   } else if (evt.target.matches(".checkbox-btn")) {
     let checkTodoId = evt.target.dataset.checkId * 1;
 
