@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./images/checkbox-checked.svg">
+    <title>Todos</title>
+</head>
+
+<body>
+    <div class="wrapp">
+        <h2 class="form__heading">Kun rejalari</h2>
+
+        <form class="form" action="#">
+            <div class="form__box">
+                <input class="form__input--name" type="text" name="user_name" required placeholder="Ismingizni kiriting"
+                    autocomplete="off">
+
+                <input class="form__input--todo" type="text" name="user_name" required placeholder="reja kiriting"
+                    autocomplete="off">
+
+                <button class="button"  ><span class="button-desc">Reja qo'shish</span></button>
+            </div>
+    </form>
+    <div class="btn-bottom">
+        <button class="button btn btn-all"><span class="button-desc btn-all">Hammasi: <span class="des-all btn-all">0</span></span></button>
+        <button class="button btn btn-com"><span class="button-desc btn-com">Bajarilgan: <span class="des-com btn-com">0</span></span></button>
+        <button class="button btn btn-umc"><span class="button-desc btn-umc">Bajarilmagan: <span class="des-umc btn-umc">0</span></span></button>
+    </div>
+    <h2 class="list__title"></h2>
+    <ul class="todo__result">
+
+    </ul>
+
+    </div>
+     <script src="./js/main.js"></script>
+</body>
+
+</html>
